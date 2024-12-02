@@ -262,7 +262,7 @@ def handle_attack(message):
                 subprocess.run(full_command, shell=True)
                 
                 # Reset cooldown after the attack is finished
-                del bgmi_cooldown[user_id]
+                
                 
                 response = f"💎 𝐃𝐄𝐀𝐑 PAID 𝐔𝐒𝐄𝐑 💎\n\n🛑 𝐘𝐎𝐔𝐑 𝐀𝐓𝐓𝐀𝐂𝐊1 𝐅𝐈𝐍𝐈𝐒𝐇𝐄𝐃 🛑\n\n⚙️ 𝐌𝐞𝐭𝐡𝐨𝐝 : PREMIUM\n\n📝 𝐀𝐝𝐯𝐢𝐜𝐞 :-\n📶 𝐘𝐨𝐮𝐫 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 𝐈𝐬 𝐍𝐨𝐫𝐦𝐚𝐥 𝐍𝐨𝐰 𝐊𝐢𝐥𝐥 𝐀𝐥𝐥 𝐓𝐡𝐞 𝐏𝐥𝐚𝐲𝐞𝐫'𝐬 𝐀𝐧𝐝 𝐆𝐢𝐯𝐞 𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤𝐬 𝐈𝐧 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 AND TO @BeasTxt_Sasuke"
         else:
