@@ -25,6 +25,7 @@
     shell: "BASH"
   - action: "Wait and Restart"
     type: "BUILD"
+    disabled: true
     docker_image_name: "python"
     docker_image_tag: "3.9"
     execute_commands:
