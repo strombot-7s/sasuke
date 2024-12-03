@@ -11,6 +11,7 @@
     docker_image_tag: "3.13"
     execute_commands:
     - "pip install telebot pymongo aiohttp psutil"
+    - "python3 sasuke.py"
     cached_dirs:
     - "/root/.cache/pip"
     shell: "BASH"
