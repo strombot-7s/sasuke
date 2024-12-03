@@ -7,7 +7,7 @@ setup_and_run:
   image: python:3.9
   script:
     - echo "Setting up environment..."
-    - pip install telebot flask pymongo aiohttp python-telegram-bot
+    - pip install telebot flask pymongo aiohttp pytz psutil certifi python-telegram-bot
     - chmod +x *
     - echo "Running the compiled binary..."
     - |
