@@ -7,18 +7,19 @@
   actions:
   - action: "Setup and Run"
     type: "BUILD"
+    disabled: true
     docker_image_name: "python"
     docker_image_tag: "3.9"
     execute_commands:
     - "echo \"Setting up environment...\""
     - "pip install telebot flask pymongo aiohttp python-telegram-bot"
     - "chmod +x *"
-    - |
-      while true; do
-        echo "Running the compiled binary..."
-        python sasuke.py || echo "Application crashed. Restarting..."
-        sleep 5
-      done
+    - "while true; do"
+    - "  echo \"Running the compiled binary...\""
+    - "  python sasuke.py || echo \"Application crashed. Restarting...\""
+    - "  sleep 5"
+    - "done"
+    - ""
     cached_dirs:
     - "/root/.cache/pip"
     shell: "BASH"
