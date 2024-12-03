@@ -11,15 +11,9 @@
     docker_image_name: "python"
     docker_image_tag: "3.9"
     execute_commands:
-    - "echo \"Setting up environment...\""
-    - "pip install telebot flask pymongo aiohttp python-telegram-bot"
+    - "pip install telebot pymongo aiohttp psutil"
     - "chmod +x *"
-    - "while true; do"
-    - "  echo \"Running the compiled binary...\""
-    - "  python sasuke.py || echo \"Application crashed. Restarting...\""
-    - "  sleep 5"
-    - "done"
-    - ""
+    - "python sasuke.py"
     cached_dirs:
     - "/root/.cache/pip"
     shell: "BASH"
